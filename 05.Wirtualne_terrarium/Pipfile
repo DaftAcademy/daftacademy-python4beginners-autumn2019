@@ -1,0 +1,22 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+ipython = {extras = ["all"],version = "*"}
+requests = "*"
+itsdangerous = "*"
+jupyter-contrib-nbextensions = "*"
+jupyter-nbextensions-configurator = "*"
+rise = "*"
+
+[requires]
+python_version = "3.7"
+
+[scripts]
+notebook = "jupyter notebook"
+slides-p1 = "jupyter nbconvert wirtualne_terarrium.ipynb --to slides --post serve"
+slides-p2 = "jupyter nbconvert requests.ipynb --to slides --post serve"
